@@ -6,14 +6,14 @@ package com.example.deezy.reportcardclass;
 
 public class ReportCard {
     private String mStudent;
-    public String mEnglish;
-    public String mMaths;
-    public String mScience;
-    public String mPE;
-    public String mICT;
+    private String mEnglish;
+    private String mMaths;
+    private String mScience;
+    private String mPE;
+    private String mICT;
 
-// To add a Report Card you enter the student name and their initial grades.
-    public ReportCard (String student, String english, String maths, String science, String PE, String ICT){
+    // To add a Report Card you enter the student name and their initial grades.
+    public ReportCard(String student, String english, String maths, String science, String PE, String ICT) {
         mStudent = student;
         mEnglish = english;
         mMaths = maths;
@@ -27,10 +27,11 @@ public class ReportCard {
         return mStudent;
     }
 
-    public String getmEnglish(){
+    public String getmEnglish() {
         return mEnglish;
     }
-    public String getmMaths(){
+
+    public String getmMaths() {
         return mMaths;
     }
 
@@ -46,30 +47,31 @@ public class ReportCard {
         return mICT;
     }
 
-    // The following methods allow the user to input new grades.
-
-    public  String updatemEnglish(String newEnglish){
-        mEnglish = newEnglish;
-        return mEnglish;
+    public void setmStudent(String mStudent) {
+        this.mStudent = mStudent;
     }
 
-    public String updatemMaths(String newMaths){
-        mMaths = newMaths;
-        return mMaths;
+    public void setmEnglish(String mEnglish) {
+        this.mEnglish = mEnglish;
     }
 
-    public String updatemScience(String newScience){
-        mScience = newScience;
-        return mScience;
-    }
-    public String updatemPE(String newPE){
-        mPE = newPE;
-        return mPE;
-    }
-    public String updatemICT(String newICT){
-        mICT = newICT;
-        return mICT;
+    public void setmMaths(String mMaths) {
+        this.mMaths = mMaths;
     }
 
+    public void setmScience(String mScience) {
+        this.mScience = mScience;
+    }
 
+    public void setmPE(String mPE) {
+        this.mPE = mPE;
+    }
+
+    public void setmICT(String mICT) {
+        this.mICT = mICT;
+    }
+
+    public String toString() {
+        return "Student: " + mStudent + "\n English: " + mEnglish + "\n Maths: " + mMaths + "\n Science: " + mScience + "\n PE: " + mPE + "\n ICT: " + mICT;
+    }
 }
